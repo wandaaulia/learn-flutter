@@ -13,15 +13,24 @@ class FirstScreen extends StatelessWidget {
             onPressed: () {},
           ),
           title: Text('First Screen'),
-          actions: [
+          actions: <Widget>[
             IconButton(
-              icon: Icon(
-                Icons.search,
-                color: Colors.white,
-              ),
+              icon: Icon( Icons.search, color: Colors.white,),
               onPressed: () {},
             )
-          ]
+          ],
+        ),
+        body: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            Icon(Icons.share),
+            Icon(Icons.thumb_up),
+            Icon(Icons.thumb_down),
+          ],
+        ),
+        floatingActionButton: FloatingActionButton(
+          child: Icon(Icons.add),
+          onPressed: () {},
         ),
       );
   }
